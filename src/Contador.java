@@ -21,9 +21,8 @@ public class Contador {
         //validar se parametroUm é MAIOR que parametroDois e lançar a exceção
         if (parametroDois>parametroUm) {
             int contagem = parametroDois - parametroUm;
-            for (int i = 1; parametroUm <= parametroDois ; i++) {
-                System.out.println("Imprimindo posição "+i+", numero "+parametroUm);
-                parametroUm++;
+            for (int i = 1; i<= contagem ; i++) {
+                System.out.println("Imprimindo o numero "+i);
             }
         } else {
             throw new ParametrosInvalidosException();
